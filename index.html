@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Titulo de la pagina:-->
+    <title> Desafio 1: Se vende patito feo </title>
+</head>
+
+
+<body>
+
+    <div class="d-flex justify-content-center align-items-center"> 
+        <div class="card" style="width: 20rem;">
+            <img src="assets/imagenes/patito-feo.jpg" class="PatitoFeo" alt="PatitoFeo">
+            <div class="card-body">
+            <h5 class="card-title"> Se vende patito feo </h5>
+            <input type="number" placeholder="Cantidad" id="Cantidad">
+            <select class="d-flex"> 
+                <option value="Rojo" id="Rojo"> Rojo </option>
+                <option value="Azul" id="Azul"> Azul </option>
+                <option value="Negro" id="Negro"> Negro </option> 
+            </select>
+            <p> Precio: $7.000 </p>
+            <button id="Boton"> Calcular Total </button>
+            </div>
+        </div>
+
+        <div class="Detalles"> 
+            <p> Total: <span id="Total"> $0 </span> </p> 
+            <p> Cantidad: <span id="Q"> 0 </span></p>
+            <div class="d-flex"> 
+                <p> Color: <div id="Pelota" style="height: 20px; width: 20px; background-color: white; border-radius: 50%; margin-left: 8px;"> </div> </p>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+
+        /* Profesor, le puse aqui el CSS para no crear un archivo aparte, por si acaso :D */ 
+
+        body{
+            background-color: lightgreen;
+            margin-top: 20px;
+        }
+
+        .Detalles{
+            margin-left: 20px;
+            align-items: center;
+            vertical-align: middle;
+        }
+
+    </style>
+
+    <script src="javascript/PatitoFeo.js"> </script>
+
+</body>
+
+</html>
